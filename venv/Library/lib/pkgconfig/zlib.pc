@@ -1,0 +1,13 @@
+prefix=H:/DpWork_AutomationTesting/venv/Library
+exec_prefix=H:/DpWork_AutomationTesting/venv/Library
+libdir=H:/DpWork_AutomationTesting/venv/Library/lib
+sharedlibdir=H:/DpWork_AutomationTesting/venv/Library/lib
+includedir=H:/DpWork_AutomationTesting/venv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

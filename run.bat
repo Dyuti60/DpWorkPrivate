@@ -1,0 +1,1 @@
+pytest -v --html=./reports/DpWorkLoginPageTestReport.html testCases/test_dpwork_loginpage.py --browser chrome
