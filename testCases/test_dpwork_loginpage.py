@@ -10,7 +10,7 @@ import time
 class Test_001_Login:
     dpwork_url=readConfig.getDpWorkUrl()
     logger=LogGen.loggen()
-    dpwork_loginpage_SS_folder='DpworkLoginPage'
+    dpwork_loginpage_SS_folder='dpWorkLoginPageSSFolder'
 
     def test_DpWorkLoginPage(self, setup):
         try:
