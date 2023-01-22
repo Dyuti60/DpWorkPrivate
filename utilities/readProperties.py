@@ -38,3 +38,17 @@ class readConfig():
         SuperUserRolePassword=config.get('common info','super_user_role_password')
         return SuperUserRolePassword
 
+    @staticmethod
+    def getEmailSender():
+        emailSender=config.get('common info','emailSender')
+        return emailSender
+
+    @staticmethod
+    def getEmailReceivers():
+        emailReceivers=config.get('common info','emailReceivers')
+        return emailReceivers
+
+    @staticmethod
+    def getemailsenderpassword():
+        SenderEmailPassword=config.get('common info','senderEmailPassword')
+        return SenderEmailPassword

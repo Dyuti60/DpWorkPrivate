@@ -1,0 +1,1 @@
+activate & conda activate .\venv & pytest -v --html=./reports/DPWorkLoginPageTestReport.html testCases/test_dpwork_loginpage.py & pause

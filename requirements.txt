@@ -8,3 +8,5 @@ pytest-html
 pytest-xdist
 Allure-pytest
 pypiwin32
+pillow
+python-docx

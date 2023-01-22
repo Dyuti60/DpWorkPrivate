@@ -87,3 +87,27 @@ class DpWorkLoginPage:
             pass
         location=os.getcwd()+'\\'+str(SS)+'\\'
         return location
+    
+    def takeAndSaveScreenshotUnique(self,location,username,serialNumber):
+        final_location=location+'\\SS-{} - {}.png'.format(serialNumber,username)
+        self.driver.save_screenshot(final_location)
+        return final_location
+
+    def takeAndSaveScreenshotCommon(self,location,username,serialNumber):
+        final_location=location+'\\SS-{}-LoginTest_DpWorker_UserName - {}.png'.format(serialNumber,username)
+        self.driver.save_screenshot(final_location)
+
+    def collectScreenshot(self,screenshotFolder,username):
+        location=os.getcwd()+"//{}".format(screenshotFolder)
+        desired_screenshots=[]
+        for ss in os.listdir(location):
+            if ss.__contains__(username):
+                desired_screenshots.append(location+"//{}".format(ss))
+        return desired_screenshots
+
+    def deleteScreenshots(self,screenshotFolder,username):
+        location=os.getcwd()+"//{}".format(screenshotFolder)
+        desired_screenshots=[]
+        for ss in os.listdir(location):
+            if ss.__contains__(username):
+                os.remove(location+"//{}".format(ss))
