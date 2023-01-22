@@ -1,5 +1,5 @@
 .pytest_cache/
-.vscode
+.vscode/
 logs/automation.log
 pageObjects/__pycache__
 reports/assets
