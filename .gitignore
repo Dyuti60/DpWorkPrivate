@@ -1,8 +1,0 @@
-.pytest_cache/
-.vscode/
-logs/automation.log
-pageObjects/__pycache__
-reports/assets
-testCases/__pycache__
-utilities/__pycache__
-venv
